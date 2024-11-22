@@ -1,0 +1,63 @@
+@font-face {
+	font-family: "Gucina";
+	src: url("../fonts/Gucina-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "Gucina", sans-serif;
+}
+
+h1 {
+	letter-spacing: 0.3rem;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 0.1rem;
+	opacity: 80%;
+}
+
+.container {
+	width: 100%;
+	max-width: 37.5rem; /* 600px */
+	margin-top: -15rem;
+}
+
+.lead {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Background Gradient Text */
+.text-gradient {
+	background: linear-gradient(to right, #84ff63, #00ffff);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Background Image */
+.bg-image {
+	height: 50vh;
+	background: url("../img/bg.png") no-repeat center;
+	background-size: cover;
+	filter: brightness(70%);
+	z-index: 1;
+}
+
+/* Smooth Fading for Background and container */
+.bg-image,
+.container {
+	animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
